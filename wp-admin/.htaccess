@@ -1,5 +1,0 @@
-<Files install.php>
-	Order deny,allow
-	Deny from all
-	Allow from 176.158.134.135
-</Files>
