@@ -20,7 +20,7 @@
 		background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
 		background-size: cover;
 		background-position: center;
-		height: rem-calc(228);
+		height: rem-calc(685);
 		margin: 0 0 rem-calc(72);
 	}
 
@@ -85,7 +85,7 @@
 
 		@include breakpoint(medium) {
 			@include grid-column(5);
-			padding-top: 0,5rem;
+			padding-top: 6rem;
 		}
 
 	}

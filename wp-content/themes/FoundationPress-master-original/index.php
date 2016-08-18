@@ -14,20 +14,7 @@
  */
 
 get_header(); ?>
-<header id="front-hero" role="banner">
-	<div class="marketing">
-		<div class="tagline">
-			<h1><?php bloginfo( 'name' ); ?></h1>
-			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-		</div>
 
-		<div id="watch">
-			<section id="twitter">
-				<a href="https://twitter.com/edd_br">@Edd_Br</a>
-			</section>
-		</div>
-	</div>
-</header>
 <div id="page" role="main">
 	<article class="main-content">
 	<?php if ( have_posts() ) : ?>
