@@ -53,8 +53,10 @@
 					<?php get_template_part( 'template-parts/mobile-top-bar' ); ?>
 				<?php endif; ?>
 			</div>
+			
 		</nav>
 	</header>
 
 	<section class="container">
 		<?php do_action( 'foundationpress_after_header' );
+

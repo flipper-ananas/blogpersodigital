@@ -10,6 +10,7 @@
 register_nav_menus(array(
 	'top-bar-r'  => 'Right Top Bar',
 	'mobile-nav' => 'Mobile',
+	'secondary' => __('Secondary Menu', 'vertulab'),
 ));
 
 
@@ -31,6 +32,25 @@ if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
 		));
 	}
 }
+
+/**
+ * Desktop navigation - test de mise en place de menu de catégorie
+ *
+ * @link http://lesdoigtsdanslenet.com/ajouter-un-menu-a-votre-theme-wordpres/
+ */
+if ( ! function_exists( 'foundationpress_top_bar_r' ) ) {
+	function foundationpress_top_bar_r() {
+		wp_nav_menu( array(
+        'theme_location' => 'secondary', /* identifiant du menu pour WP */
+        'menu_class' => 'menu-secondaire',   /* classe css */
+        'container' => 'div',            /* élément HTML conteneur */
+        'link_before' => '<span>',     /* élément HTML avant le lien */
+        'link_after' => '</span>'      /* élément HTML après le lien */
+    ));
+
+	}
+}
+
 
 
 /**
